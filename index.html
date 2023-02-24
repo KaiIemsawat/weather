@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-banner.css">
+    <link rel="stylesheet" href="style-mainContainer.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <h1>DojoWeather</h1>
+        <div class="cityMenu">
+            <a href="" class="cities" onclick="alertPop()"><h3>Burbank</h3></a>
+            <a href="" class="cities" onclick="alertPop()"><h3>Chicago</h3></a>
+            <a href="" class="cities" onclick="alertPop()"><h3>Dallas</h3></a>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="topContainer">
+            <div class="currentCityDetails">
+                <h2 class="currentCity">San Jose</h2>
+                <div class="tempOptions">
+                    <h4>show temperature in </h4>
+                    <select name="tempSelection" id="tempSelection" onchange="tempConvert(this)">
+                        <option value="C°" id="degreeC">C°</option>
+                        <option value="F°" id="degreeF">F°</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="midContainer">
+            <div class="dayPanel panel0">
+                <h3 class="dayHead" id="today">Today</h3>
+                <img src="./assets/some_rain.png" alt="rainImg">
+                <h4 class="dayDetails">some rain</h4>
+                <div class="dayTemperature">
+                    <h3 class="highTemp">24°</h3>
+                    <h3 class="lowTemp">18°</h3>
+                </div>
+            </div>
+            <div class="dayPanel panel1">
+                <h3 class="dayHead" id="tomorrow">Tomorrow</h3>
+                <img src="./assets/some_sun.png" alt="sunImg">
+                <h4 class="dayDetails">some sun</h4>
+                <div class="dayTemperature">
+                    <h3 class="highTemp">27°</h3>
+                    <h3 class="lowTemp">19°</h3>
+                </div>
+            </div>
+            <div class="dayPanel panel2">
+                <h3 class="dayHead" id="theDayAfterTomorrow">Friday</h3>
+                <img src="./assets/some_clouds.png" alt="cloudImg">
+                <h4 class="dayDetails">some cloud</h4>
+                <div class="dayTemperature">
+                    <h3 class="highTemp">21°</h3>
+                    <h3 class="lowTemp">16°</h3>
+                </div>
+            </div>
+            <div class="dayPanel panel3">
+                <h3 class="dayHead" id="twoDaysAfterTomorrow">Saturday</h3>
+                <img src="./assets/some_sun.png" alt="sunImg">
+                <h4 class="dayDetails">some sun</h4>
+                <div class="dayTemperature">
+                    <h3 class="highTemp">26°</h3>
+                    <h3 class="lowTemp">21°</h3>
+                </div>
+            </div>
+        </div>
+        <div class="lowerContainer">
+            <img src="./assets/cookie.png" alt="cookieImg" class="cookieImg">
+            <div class="cookieDetails">
+                <h3 class="cookieHead">Stop! Cookie Time</h3>
+                <h4 class="cookieDscription">We use cookies (sadly not the edible one) to personalize content and ads, to provide social media features and to analise our traffic. 
+                    <a href="https://en.wikipedia.org/wiki/HTTP_cookie">Read more...</a>
+                </h4>
+            </div>
+            <input type="button" id="acceptCookie" value="I Accept" onclick="acceptCookie()">
+        </div>
+    </div>
+</body>
+</html>

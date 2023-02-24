@@ -1,0 +1,114 @@
+.mainContainer {
+    margin: auto 10%;
+    width: 80%;
+}
+
+/* ---- Top Container ---- */
+
+.currentCity {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.currentCityDetails, .tempOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tempSelection {
+    margin-left: 20px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.topContainer {
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+/* ---- Mid Container ---- */
+
+.midContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dayPanel {
+width: 22%;
+padding: 20px 0;
+background-color: #eeeeee;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.dayHead, .cookieHead {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+img {
+    width: 70%;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+
+.dayDetails, .cookieDscription {
+    font-weight: 400;
+}
+
+.dayTemperature {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.highTemp, .lowTemp {
+    margin: auto 20px;
+}
+
+.highTemp {
+    color: #CE2B27;
+}
+
+.lowTemp {
+    color: #2B78E4;
+}
+
+/* ---- Lower Container ---- */
+
+.lowerContainer {
+    margin-top: 20px;
+    padding: 0 20px;
+    border: 3px solid black;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cookieImg {
+    width: 120px;
+}
+
+.cookieDetails {
+    margin: 0 20px;
+}
+
+#acceptCookie {
+    align-self: center;
+    width: 130px;
+    height: 30px;
+    padding: 3px 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    background-color: #9FC5F8;
+    font-size: 1rem;
+}
+
+.cookieDscription>a {
+    color: navy;
+    text-decoration: underline;
+}
